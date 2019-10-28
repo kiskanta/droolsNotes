@@ -1,8 +1,44 @@
+# Drools
+
+Drools is a Business Rules Management System (BRMS) solution.
+* It Provides a core Business Rules Engine (BRE). It is an open source project that is backed by JBoss and Red Hat.
+
+* It extends and Implements the `Rete Pattern matching Algorithm`.
+
+* In Layman's terms, `Drools is a collection of tools that allow us to separate and reason over logic and data found within business process` . 
+
+## What is a Rule?
+* Rules are pieces of knowledge often expressed as, "When some conditions occur then do some tasks."
+
+```drools
+When
+	<Condition is true>
+Then
+	<Take desired Action>
+```
+
+When - Left hand side (conditions)
+Then - Right hand side (Actions)
+* The most important part of rules is its when part. If the when part is satisfied, the then part is triggred.
+
+```drools
+rule <rule_name>
+	<attribute> <value>
+	When
+		<Condition is true>
+	Then
+		<Take desired Action>
+	end
+```
+
+<span style="text-decoration:underline">Conditions in Rules.</span>.
+
+<span style="text-decoration:underline">Variables in Rules.</span>.
 
 
-Drools is a business Rules Management System (BRMS) solution.
-It Provides a core Business Rules Engine (BRE), 
 
+
+When - Left hand side (conditions)
 Facts are the data to be processed
 The rules Engine applies the rules to the facts
 The Rules Engine takes the specified actions based on the rules that fired. Actions or outcomes
@@ -101,4 +137,9 @@ State Full Session - are longer lived and allow iterative changes over time.
 
 Reference:
 https://docs.jboss.org/drools/release/7.28.0.Final/drools-docs/html_single/index.html
+https://en.wikipedia.org/wiki/Rete_algorithm
+https://intellipaat.com/jbpm-drools-training/
+http://www.masterspringboot.com/various/various/getting-started-with-drools-on-spring-boot-applications
 
+https://www.youtube.com/watch?v=QtXGIu7hR8s
+https://www.youtube.com/watch?v=5J_QT9i6WK8
