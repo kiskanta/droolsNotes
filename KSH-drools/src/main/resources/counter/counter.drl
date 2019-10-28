@@ -1,0 +1,10 @@
+package counter;
+
+import com.ksh.pojo.Counter
+
+rule "Counter shower 1" 
+	when 
+		$Counter  : Counter() 
+	then 
+    	System.out.println("Counter there (1) : " + $Counter.count + " and the name is : " + $Counter.name);
+ 	end
